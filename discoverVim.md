@@ -44,7 +44,7 @@ Cependant il est conseillé d'utiliser les raccourcis suivants:
 
 `b`: Aller au début du mot sur lequel est le curseur
 
-#### Ecrire du texte
+#### Écrire du texte
 
 `i`: Passer en mode insertion avant le curseur
 
@@ -86,9 +86,9 @@ Cependant il est conseillé d'utiliser les raccourcis suivants:
 
 `G`: Aller à la fin du fichier
 
-`H`: Aller à la première ligne afficher
+`H`: Aller à la première ligne affichée
 
-`L`: Aller à la dernière ligne afficher
+`L`: Aller à la dernière ligne affichée
 
 `:`: Aller à la ligne avec un numéro
 
@@ -104,7 +104,7 @@ Cependant il est conseillé d'utiliser les raccourcis suivants:
 
 `t`: Rechercher dans la ligne et déplacer le curseur avant la première occurrence
 
-`*`: Rechercher le mot sur lequel est positionné le curseur
+`*`: Surligner le mot sur lequel est positionné le curseur
 
 #### Autre
 
@@ -112,7 +112,7 @@ Cependant il est conseillé d'utiliser les raccourcis suivants:
 
 `Ctrl + R`: Refaire (`Ctrl + y`)
 
-`<Esc>`: Repasser en mode normal
+`<Esc>`: Passer en mode normal
 
 #### La combinaison
 
@@ -191,11 +191,11 @@ Les macros permettent d'enregistrer une suite d'actions et de les refaires
 
 Les macros sont identifiées par une lettre
 
-Pour utiliser une macro, il faut utiliser un `@` puis la lettre qui correspond à la macro
-
 Pour enregistrer une macro, il suffit en mode normal, d'appuyer sur `q` puis sur la lettre correspondant à la macro
 
 Ensuite il suffit d'exécuter des actions, puis d'appuyer sur `q` pour finir l'enregistrement
+
+Pour utiliser une macro, il faut utiliser un `@` puis la lettre qui correspond à la macro
 
 ## La configuration
 
@@ -217,7 +217,7 @@ Ces plugins sont écrits en vimscript (lua) et sont créés par des utilisateurs
 
 Pour les installer, il existe plusieurs méthodes
 
-- La plupart des plugins proposent un moyen d'installation manuel sur leur github
+- La plupart des plugins proposent une méthode d'installation sur leur github
 
 - Un plugin manager
 
@@ -469,9 +469,9 @@ Intant vim est un plugin qui permet de faire de l'édition collaborative
 
 ## Comment bien configurer de nouveaux plugins
 
-Pour bien configurer un plugin, il est recommandé de lire entièrement la documentation sur les githubs
+Pour bien configurer un plugin, il est recommandé de lire entièrement leurs documentations sur leurs githubs respectifs
 
-Il est également recommande de séparer les configurations des plugins par fichiers
+Il est également recommandé de séparer les configurations des plugins par fichiers
 
 ## Des petits tips
 
@@ -491,9 +491,9 @@ Cependant, il est nécessaire de passer du temps sur sa configuration pour qu'il
 
 Si vous voulez vous documenter un peu plus sur vim et sur les plugins que je viens de vous montrer
 
-Voici le lien de mes Dotfiles (ils contiennent de la doc sur les plugins) ``
+Voici le lien de mes Dotfiles (ils contiennent de la doc sur les plugins) (Coming soon)
 
-Je vous donne aussi le lien de ce fichier: ``
+Je vous donne aussi le lien de ce fichier: (Comming soon)
 
 ## Maintenant, la pratique !
 
@@ -501,4 +501,4 @@ Maintenant que vous avez toutes ces infos, je vous laisse configurer votre vim c
 
 Servez vous des liens pour faire votre configuration
 
-Je suis là pour répondre a vos questions ou si vous avez des problèmes
+Je suis là pour répondre à vos questions ou si vous avez des problèmes

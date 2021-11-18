@@ -217,7 +217,7 @@ Ces plugins sont écrits en vimscript (lua) et sont créés par des utilisateurs
 
 Pour les installer, il existe plusieurs méthodes
 
-- La plupart des plugins proposent une méthode d'installation sur leur github
+- La plupart des plugins proposent ces méthodes d'installation sur leur github
 
 - Un plugin manager
 
@@ -491,9 +491,9 @@ Cependant, il est nécessaire de passer du temps sur sa configuration pour qu'il
 
 Si vous voulez vous documenter un peu plus sur vim et sur les plugins que je viens de vous montrer
 
-Voici le lien de mes Dotfiles (ils contiennent de la doc sur les plugins) (Coming soon)
+Voici le lien de mes [Dotfiles](https://github.com/Curs3W4ll/Dotfiles) (ils contiennent de la doc sur les plugins)
 
-Je vous donne aussi le lien de ce fichier: (Comming soon)
+Je vous donne aussi le lien de [ce fichier](https://github.com/Curs3W4ll/Discover_Vim/blob/main/discoverVim.md)
 
 ## Maintenant, la pratique !
 

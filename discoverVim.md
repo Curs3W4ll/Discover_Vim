@@ -72,7 +72,7 @@ Cependant il est conseillé d'utiliser les raccourcis suivants:
 
 `p`: Coller après le curseur
 
-`P`: Copier avant le curseur
+`P`: Coller avant le curseur
 
 `x`: Couper le caractère sous le curseur
 

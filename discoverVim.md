@@ -1,4 +1,4 @@
-# Decouverte de vim (ou plutot neovim :))
+# Découverte de vim (ou plutôt neovim :))
 
 ## L'interface et les bases
 

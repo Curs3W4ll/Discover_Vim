@@ -1,4 +1,4 @@
-# Découverte de vim (ou plutôt neovim :))
+# Découverte de vim (ou plutôt neovim :smirk:)
 
 ## L'interface et les bases
 
@@ -19,6 +19,8 @@
 `Visual`: Sélection
 
 `Visual-block`: Sélection en bloc
+
+`Command`: Mode d'éxécution de commandes
 
 ### Les raccourcis de base
 
@@ -90,7 +92,7 @@ Cependant il est conseillé d'utiliser les raccourcis suivants:
 
 `L`: Aller à la dernière ligne affichée
 
-`:`: Aller à la ligne avec un numéro
+`:<xx>`: Aller à la ligne avec un numéro
 
 #### Recherche
 
@@ -104,7 +106,7 @@ Cependant il est conseillé d'utiliser les raccourcis suivants:
 
 `t`: Rechercher dans la ligne et déplacer le curseur avant la première occurrence
 
-`*`: Surligner le mot sur lequel est positionné le curseur
+`*`: Rechercher le mot sur lequel est positionné le curseur
 
 #### Autre
 
@@ -207,13 +209,13 @@ Dans notre cas, pour neovim, ce sera `~/.config/nvim/init.vim`
 
 C'est ici que l'on peut configurer vim
 
-Pour plus d'informations sur ces configurations, vous avez mes dotfiles à disposition qui vous expliquent tous comme il faut
+Pour plus d'informations sur ces configurations, vous avez mes [dotfiles](https://github.com/Curs3W4ll/Dotfiles) à disposition qui vous expliquent tous comme il faut
 
 ## Comment faire de vim un vrai IDE en utilisant des plugins
 
 La vraie force de vim, au-delà de ça, c'est les plugins
 
-Ces plugins sont écrits en vimscript (lua) et sont créés par des utilisateurs
+Ces plugins sont écrits en vimscript (ou lua) et sont créés par des utilisateurs
 
 Pour les installer, il existe plusieurs méthodes
 
@@ -229,29 +231,29 @@ Il existe pas mal de plugin managers: `vimplug`, `vundle`, `pathogen`
 
 Mais celui que j'utilise et recommande est `vimplug`
 
-Pour l'installer, il faut suivre les instructions sur ![github](https://github.com/junegunn/vim-plug)
+Pour l'installer, il faut suivre les instructions sur [github](https://github.com/junegunn/vim-plug)
 
 Il existe deux catégories de plugins
 
 <details>
-    <summary>Les plugins passifs, qui tournent en arrière plan</summary>
+<summary>Les plugins passifs, qui tournent en arrière plan</summary>
 
-    La plupart du temps, ces plugins affichent des informations ou facilitent la vision de l'utilisateur
+La plupart du temps, ces plugins affichent des informations ou facilitent la vision de l'utilisateur
 
 </details>
 
 <br/>
 
 <details>
-    <summary>Les plugins actifs, qui se lancent lors d'une action de l'utilisateur</summary>
+<summary>Les plugins actifs, qui se lancent lors d'une action de l'utilisateur</summary>
 
-    Ces plugins ne font des actions uniquement quand l'utilisateur le demande
+Ces plugins ne font des actions uniquement quand l'utilisateur le demande
 
-    Pour cela, les plugins actifs utilisent des commandes, par exemple :MakeHeader
+Pour cela, les plugins actifs utilisent des commandes, par exemple :MakeHeader
 
-    Le problème ici, c'est que taper des commandes, c'est long et chiant
+Le problème ici, c'est que taper des commandes, c'est long et chiant
 
-    Vim permet donc de faciliter l'utilisation de ces commandes
+Vim permet donc de faciliter l'utilisation de ces commandes
 
 </details>
 
@@ -261,12 +263,12 @@ Pour faire ses propres raccourcis, il faut relier une commande (`:command`) à u
 
 La syntaxe et la suivante:
 
-`<mode>map` `<combinaison de touches>` `<commandes>`
+`<mode>map` `<combinaison de touches>` `<commande(s)>`
 
 Par exemple
 
 ```vim
-map <C-n> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 ```
 
 ## Quelques plugins utiles
@@ -283,7 +285,7 @@ Vimplug est le plugin qui permet de gérer facilement l'installation et la suppr
 
 [Github](https://github.com/neoclide/coc.nvim)
 
-Coc est un plugin d'autocompletion
+Coc, c'est la vie, il fait beaucoup de choses, dont l'autocompletion, les snippets, les linters et les formatters
 
 ![Coc preview](img/coc_preview.png)
 
@@ -291,7 +293,7 @@ Coc est un plugin d'autocompletion
 
 [Github](https://github.com/Nero-F/vim-tek-header)
 
-Vim tek-header est un plugin qui permet de générer les headers Epitech automatiquement
+Vim tek-header est un plugin qui permet de générer les headers Epitech automatiquement (une nouvelle version arrive bientôt)
 
 ![Vim tek-header preview](img/vim-tek-header_preview.png)
 
@@ -301,7 +303,7 @@ Vim tek-header est un plugin qui permet de générer les headers Epitech automat
 
 Auto pairs ferme automatiquement les délimiteurs de blocs (`()`, `[]`, `""`, `''`...)
 
-Ce plugin facilite également la navigation dans ces délimiteurs et leur identification
+Ce plugin facilite également leur identification
 
 ![Auto pairs](img/auto-pairs_preview.png)
 
@@ -323,6 +325,14 @@ One dark est un thème de couleur
 
 ![Onedark preview](img/onedark_preview.png)
 
+### Nightfox
+
+[Github](https://github.com/EdenEast/nightfox.nvim)
+
+Nightfox est un autre thème de couleur
+
+![Onedark preview](img/nightfox_preview.png)
+
 ### Vim surround
 
 [Github](https://github.com/tpope/vim-surround)
@@ -334,18 +344,6 @@ Vim surround est un plugin qui facilite l'utilisation des délimiteurs (", ', {}
 [Github](https://github.com/psliwka/vim-smoothie)
 
 Vim smoothie est un plugin qui rend plus fluide les déplacements dans un fichier
-
-### Tagalong
-
-[Github](https://github.com/AndrewRadev/tagalong.vim)
-
-Tagalong permet d'auto-fermer/auto-modifier des balises html
-
-### Vim discord
-
-[Github](https://github.com/vbe0201/vimdiscord)
-
-Vim discord permet de faire une activité vim sur discord
 
 ### Git messenger
 
@@ -385,12 +383,6 @@ Indentline rends les tabulations plus visibles et lisibles
 
 ![Indentline preview](img/indentline_preview.png)
 
-### Vimspector
-
-[Github](https://github.com/puremourning/vimspector)
-
-Vimspector est un débugger sur vim
-
 ### Vim devicons
 
 [Github](https://github.com/ryanoasis/vim-devicons)
@@ -404,14 +396,6 @@ Vim devicons permet d'avoir de jolis icônes
 [Github](https://github.com/maxmellon/vim-jsx-pretty)
 
 Ce plugin rends du code jsx joli
-
-### Vim rainbow
-
-[Github](https://github.com/frazrepo/vim-rainbow)
-
-Permet de mettre des couleurs pour identifier les séparateurs
-
-![Vim rainbow preview](img/vim-rainbow_preview.png)
 
 ### Vim better whitespace
 
@@ -455,12 +439,6 @@ Tabnine est un plugin qui permet d'améliorer l'autocompletion
 
 Nerdcommenter permet de faciliter l'utilisation des commentaires
 
-### Vim Cmake
-
-[Github](https://github.com/cdelledonne/vim-cmake)
-
-Vim cmake est un gestionnaire de Makefile dans vim
-
 ### Instant nvim
 
 [Github](https://github.com/jbyuki/instant.nvim)
@@ -493,8 +471,6 @@ Si vous voulez vous documenter un peu plus sur vim et sur les plugins que je vie
 
 Voici le lien de mes [Dotfiles](https://github.com/Curs3W4ll/Dotfiles) (ils contiennent de la doc sur les plugins)
 
-Je vous donne aussi le lien de [ce fichier](https://github.com/Curs3W4ll/Discover_Vim/blob/main/discoverVim.md)
-
 ## Maintenant, la pratique !
 
 Maintenant que vous avez toutes ces infos, je vous laisse configurer votre vim comme vous le souhaitez
@@ -502,3 +478,5 @@ Maintenant que vous avez toutes ces infos, je vous laisse configurer votre vim c
 Servez vous des liens pour faire votre configuration
 
 Je suis là pour répondre à vos questions ou si vous avez des problèmes
+
+![](img/vim_commands.jpg)
